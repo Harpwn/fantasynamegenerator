@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FantasyNameGenerator.NameGen2;
+using System;
+using System.IO;
 
 namespace FantasyNameGenerator
 {
@@ -6,9 +8,12 @@ namespace FantasyNameGenerator
     {
         static void Main(string[] args)
         {
-            while(1 == 1)
+            var set = new WordSet(2);
+            set.addWords(File.ReadAllText("..\\..\\..\\NameGen2\\sets\\set1.txt"),",");
+
+            while (1 == 1)
             {
-                Console.WriteLine(NameGenerator.Name());
+                Console.WriteLine(NameGen2.MarkovChain.Generate(set,5,10));
                 Console.ReadLine();
             }
         }

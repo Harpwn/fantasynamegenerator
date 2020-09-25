@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace FantasyNameGenerator
+namespace FantasyNameGenerator.NameGen1
 {
     public static class NameGenerator
     {
