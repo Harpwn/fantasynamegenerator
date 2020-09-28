@@ -5,3 +5,5 @@ Found another fantasy name generator and converted it to c#
 Pretty basic but does the job.
 
 Based on https://github.com/alxgiraud/fantasygen
+
+Second implementation using markov chain, works way better.
